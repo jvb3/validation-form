@@ -1,0 +1,80 @@
+.form {
+  width: 375px;
+  margin: 30px auto;
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: "Space Grotesk";
+  color: $darker-violet;
+
+  &__content {
+    width: inherit;
+    padding-bottom: 1rem;
+  }
+  &__label {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+
+  &__input {
+    display: block;
+    color: $dark-violet;
+    opacity: 30%;
+    line-height: 23px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $dark-violet;
+  }
+  &__button {
+    width: 100%;
+    padding: 12px 0 12px 0;
+    border-radius: 8px;
+    background-color: $darker-violet;
+    color: $light-violet;
+    border: none;
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+  &__text {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  :nth-child(1),
+  :nth-child(2) {
+    width: 100%;
+  }
+  :nth-child(3) input {
+    width: 70%;
+    display: inline-block;
+  }
+  &__inner-container-row {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 1rem;
+  }
+  &__content:last-child input {
+    width: 100%;
+  }
+  &__inner-container-column {
+    display: flex;
+    gap: 7px;
+  }
+}
+.flex-basis-exp {
+  flex-basis: 250px;
+}
+.flex-basis-cvc {
+  flex-basis: 125px;
+}
+
+@include lg {
+  .form {
+    padding-top: 15rem;
+  }
+}

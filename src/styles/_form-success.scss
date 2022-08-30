@@ -1,0 +1,32 @@
+.form-success {
+  width: 375px;
+  margin: 30px auto;
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: "Space Grotesk";
+  color: $darker-violet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    text-align: center;
+  }
+  &__text-thanks {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 500;
+    color: $darker-violet;
+  }
+  &__text-confirmation {
+    padding-bottom: 2rem;
+    color: $dark-violet;
+  }
+}
+
+@include lg {
+  .form-success {
+    padding-top: 15rem;
+  }
+}

@@ -1,0 +1,19 @@
+.card-back {
+  display: grid;
+  max-width: 280px;
+  grid-template-columns: repeat(5, 56px);
+  grid-template-rows: repeat(5, 30px);
+
+  &__image {
+    width: 100%;
+    grid-column: 1 / 6;
+  }
+  &__text {
+    grid-column: 5;
+    grid-row: 3;
+    color: $light-violet;
+    font-weight: 500;
+    font-size: 9px;
+    padding: 7px 0 7px 3px;
+  }
+}
